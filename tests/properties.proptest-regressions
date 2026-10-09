@@ -1,0 +1,32 @@
+# Seeds for failure cases proptest has generated in the past. It is
+# automatically read and these particular cases re-run before any
+# novel cases are generated.
+#
+# It is recommended to check this file in to source control so that
+# everyone who runs the test benefits from these saved cases.
+cc d70e7240ac604701fffb0adf10540bafdcbcb3e8b35ac891e86eaa7a8d5e732a # shrinks to src = "#\r", width = 1
+cc 26447dc2dcdf5ddefc62ba9611d66f07f55023568b9cbab37c55fa7b491726f9 # shrinks to src = "/*", width = 1, which = 0
+cc a95e6a4cd6b2c527274addba8f60a30985719cf553518ef8e77b551e3c2c01f2 # shrinks to src = "/*", width = 1
+cc 4c6071b259d32791e25010b90e4690384a3871cf6ac0b17aeec4031d77c2c426 # shrinks to src = "/* open // line\n"
+cc 112502d47e00b1ccc03ca58ea13d6337c40692e6048c0087dae413802866f0f4 # shrinks to src = "/* open", width = 1, which = 0
+cc c246e5da989acb441f5bc96121c200be8240a0b8c3d0c58fd470bb1cd12b7b30 # shrinks to src = "//\n{\"\n}", width = 1, which = 2
+cc 7650d9d7423b66e8193e3756f6a5c7a890b8e627d82b53bcb1bff0a75a24f829 # shrinks to src = "1\r", width = 1
+cc ef5a7524e56a8eec2538f52a5e62dfb3e8014612d8570591a431960aad94f16b # shrinks to src = "1\r", width = 1
+cc 7c9e5f5779615bd594e6297f55af5d15818f70ceac72c0fdf46342b8b8a2e2ad # shrinks to src = "\"open: /* c */ -  \t"
+cc 7220471ff79b474db7de09ec2ad793a7b0f0f49978c23cbca23e4ebbc40f15a5 # shrinks to src = " ( - - $ 1 1 let"
+cc 935bd207563faf3dfc1fc022b09532232b0d161d257d092c8b05e1429ffb4446 # shrinks to src = "[\"open\n,\"open /* c */ 11 { /* c */ [\r\n\"s\"  \n\n  ", width = 81, which = 0
+cc 3818ff049888acfaf35c1bfe6b569d7c9fe930da1ba262161d431f0e39d7237d # shrinks to src = "é^}\"", width = 1
+cc f7fe83b286baa4cce7ff2baa367edcde3b074ab18019cb1f39d68d015163f84a # shrinks to src = "@[1 aa(/\t=", width = 1, which = 0
+cc 23f61e1685210340c3f4775561fe8d5c87dd32b3621144595e53353ef2fd02bf # shrinks to src = "1;1/*", width = 1
+cc 567a78ebe0f8ca542d6d46ece5359686353475ed51446bfd0ea41d776d4e9820 # shrinks to src = "\"\r\r\n", width = 1, which = 0
+cc 13e7dd3e8d6a2ea681a223b4ea496ae1cfde9bf25d1bae97088bb05d86aaf876 # shrinks to src = "{\"s\"[:}@\"s\"", width = 86, which = 2
+cc 2979478a704682e5a0f6be7f39cc75f2c21c90e76c92b67856568654180f2a51 # shrinks to src = "#\r\r\né", width = 1
+cc 3f73ea67752df68aa0317638089bdaf0fd2f2f5b2fac719d48e3c0ef16bea097 # shrinks to src = "{\"\n:}", width = 1, which = 2
+cc 5df681addaae941ce7c8444580ba0c587ba22e2bb498bd7c9cb38eb619078d2f # shrinks to src = "# \r\n1", width = 1
+cc 5d98ab9fa0400c5fb8cc884afad189dfa487da9427012a7da6bcaf87ac603c25 # shrinks to src = "{\"s\":}@-11true][[true", width = 55, which = 2
+cc 43e6ddb24193d25fc3826047195ca1c8368d0461c7df024270fe2b1b3d050ef3 # shrinks to src = "[{/* open\n/* multi\n   line */\n\"s\":/* open[/* open,{] /* c */ ]{,\"open,@\"s\"/* open", width = 21, which = 2
+cc d580c51c7d78f3c218932144235e04b8bc5b4d63fdef9d260c1f0236d6c2e8ca # shrinks to src = "\"\"\"\r\r\n"
+cc 40f823b0cce575627553b3ca4a3e8d987be7bc63daf1970e764600b7f6ab64c8 # shrinks to src = "//\n{\"\n[1}", width = 1, which = 2
+cc 3b429f07aa7b7e3054b0cb4e52e5f94befe607dd554eca6d915a0ac848b433a1 # shrinks to src = "# \r\n", width = 1
+cc 3781a94a6c3678751476fbb8d4be2d8bc4584a02a281b3ee6cec6ac6a1c2c7ff # shrinks to src = "[{\"s\"],truetrue}:{{\"s\"1@[:true1@-,", width = 51, which = 2
+cc cad97af1a66e94d427ce684e4676a5970a8077b98b4272458d57e359dddf3759 # shrinks to src = "/* open // line\n"

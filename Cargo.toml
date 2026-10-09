@@ -3,7 +3,7 @@
 # =============================================================================
 [package]
 name    = "fmt-lang"
-version = "0.1.0"
+version = "0.2.0"
 
 # Minimum Supported Rust Version (MSRV)
 rust-version = "1.85"
@@ -45,13 +45,18 @@ path = "src/lib.rs"
 # #################################
 [features]
 default = ["std"]
-std = []
+# `std` is forwarded to the tree and layout crates. Without it the crate is
+# `no_std` and needs only `alloc`.
+std = ["syntax-lang/std", "pretty-lang/std"]
 
 
 # DEPENDENCIES
 # #################################
 [dependencies]
-# First-party -lang dependencies are wired at v0.2.0, when first used.
+# The lossless CST the formatter walks: nodes, tokens, spans, trivia.
+syntax-lang = { version = "1", default-features = false }
+# The layout algebra the formatter renders through (Wadler/Lindig `Doc`).
+pretty-lang = { version = "1.0.1", default-features = false }
 
 
 # DEV DEPENDENCIES
@@ -59,6 +64,9 @@ std = []
 [dev-dependencies]
 criterion = { version = "0.5", features = ["html_reports"] }
 proptest  = "1"
+# Forges the test and example languages: real lossless trees with trivia,
+# comments, and ERROR nodes, from crates.io (CI builds this repo standalone).
+lang-forge = "1.0.1"
 
 
 # BENCHMARKS
