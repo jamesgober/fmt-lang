@@ -19,7 +19,7 @@ readme = "README.md"
 description = "Rule-driven source formatter over lossless syntax trees, rendering through pretty-lang."
 
 # Keywords (5 max)
-keywords = ["formatter", "pretty-print", "syntax-tree", "language", "lexersketch"]
+keywords = ["formatter", "pretty-print", "syntax-tree", "language"]
 
 # Categories
 categories = ["development-tools", "text-processing", "no-std"]
