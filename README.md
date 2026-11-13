@@ -21,7 +21,7 @@
         <strong>fmt-lang</strong> formats source code from declarative rules over a lossless syntax tree, and renders the result through <a href="https://crates.io/crates/pretty-lang"><code>pretty-lang</code></a>. Describe how a language's nodes and tokens are laid out &mdash; groups that break when they do not fit, indentation, spacing around tokens, list separators, blank lines &mdash; and any <a href="https://crates.io/crates/syntax-lang"><code>syntax-lang</code></a> tree of that language formats from those rules. Anything the rules do not mention keeps its original whitespace.
     </p>
     <p>
-        The rules are data, keyed by kind names, so a language's formatter can come from configuration rather than code: it is the formatter stage of LexerSketch, where every forged language gets one from its sketch. Comments are attached by a documented algorithm and never lost or reordered, error nodes are written exactly as they are, and formatting is idempotent.
+        The rules are data, keyed by kind names, so a language's formatter can come from configuration rather than code: it is the formatter stage of the toolchain, where every forged language gets one from its sketch. Comments are attached by a documented algorithm and never lost or reordered, error nodes are written exactly as they are, and formatting is idempotent.
     </p>
     <br>
     <hr>

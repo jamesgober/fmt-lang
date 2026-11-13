@@ -47,7 +47,7 @@
 result through [`pretty-lang`](https://crates.io/crates/pretty-lang). A
 language gets a formatter from configuration, not code: its layout is
 described as [`Rules`](#rules) (plain data, keyed by kind names, the way a
-LexerSketch sketch names them), [compiled](#rulescompile) once against the
+toolchain sketch names them), [compiled](#rulescompile) once against the
 language's kinds into a [`Style`](#style), and applied to any tree of that
 language with [`format`](#format).
 

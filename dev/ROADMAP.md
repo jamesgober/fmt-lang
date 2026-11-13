@@ -1,7 +1,6 @@
 # fmt-lang - Roadmap
 
 > Path from scaffold to a stable 1.0. Hard parts are front-loaded; each phase has hard exit criteria.
-> Master plan: ../_lexersketch/ROADMAP.md and ../_lexersketch/NEW-LIBS.md
 >
 > **Anti-deferral rule:** no listed hard task moves to a later phase unless this file records the move and the reason.
 
@@ -76,7 +75,7 @@ Moved out of v0.2.0 (anti-deferral record):
   pretty-lang**. It needs a document that renders differently in a group's
   flat and broken modes (`if_break`); pretty-lang 1.x has only text, line,
   softline, hardline, nest, and group. Recorded for pretty-lang 2.0 (the
-  LexerSketch plan already schedules pretty-lang 2.0 next to fmt-lang). Until
+  toolchain plan already schedules pretty-lang 2.0 next to fmt-lang). Until
   then `Trailing` offers `Preserve`, `Always`, and `Never`.
 
 ## v0.5.0 - Implementation
@@ -96,10 +95,10 @@ Moved out of v0.2.0 (anti-deferral record):
       against this baseline.
 
 ## v0.9.0 - Hardening
-- [ ] Fuzzing; audit with the LexerSketch LSP formatting request as consumer.
+- [ ] Fuzzing; audit with the toolchain's LSP formatting request as consumer.
 - [ ] An exact touch test generated from a forged language's symbol table
       (replacing the `can_touch` heuristic for forged languages; belongs in the
-      LexerSketch adapter, consumed here through `Style::with_touch`).
+      toolchain adapter, consumed here through `Style::with_touch`).
 
 ## v1.0.0 - Stable
 - [ ] Frozen after three target languages format through it (D18).
